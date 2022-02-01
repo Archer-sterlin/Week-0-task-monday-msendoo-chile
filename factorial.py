@@ -1,8 +1,9 @@
-def factorial(num):
-    if num == 0 or type(num) != int:
-        return f'{num} has no factorial'
-    x = 1
-    for i in range(2,num+1):
-        x *= i 
-    return f'The factorial of {num} is {x}' 
+def verify_leap_year(year):
+    try:
+        year = int(year)
+        if year % 4 == 0 or year % 400 == 0:
+            return True
+        return False
+    except :
+        return f'{year} is not a valide, expected number'
 
