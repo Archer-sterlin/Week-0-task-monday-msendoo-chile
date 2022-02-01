@@ -6,3 +6,4 @@ def factorial(num):
         x *= i 
     return f'The factorial of {num} is {x}' 
 
+print(factorial(5))
