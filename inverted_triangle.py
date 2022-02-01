@@ -1,13 +1,10 @@
-def inverted_triangle(num):
-    num = ( num - 1 ) *2
-    space = 0
-    for x in range(num, 0, -2):
-        char = f" * " * x
-        print("\n","   "*space,char[:-2])
-        space += 1
+def verify_leap_year(year):
+    try:
+        year = int(year)
+        if year % 4 == 0 or year % 400 == 0:
+            return True
+        return False
+    except :
+        return f'{year} is not a valide, expected number'
 
-
-
-
-inverted_triangle(5)
 
