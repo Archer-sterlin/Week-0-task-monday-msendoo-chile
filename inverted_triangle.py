@@ -1,25 +1,11 @@
 def inverted_triangle(num):
-    i = num + 3
-    m = num 
-    char = '*'
-    for x in range(1,num):
-        if num % 2 == 0:
-            if m == num:
-                print('',char*i)
-                m -= 1
-                i -= 2
-            print(' '*x,char*i)    
-            i -= 2
-        else:
-            if m == num:
-                i += 1
-                print('',char*i)
-                m -= 1
-                i -= 2
-            print(' '*x,char*i)    
-            i -= 2
+    num = ( num - 1 ) *2
+    space = 0
+    for x in range(num, 0, -2):
+        char = f" * " * x
+        print("\n","   "*space,char[:-2])
+        space += 1
 
 
 
-inverted_triangle(5)
-
+inverted_triangle(20)
